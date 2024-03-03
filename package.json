@@ -1,0 +1,22 @@
+{
+  "name": "@0xbigboss/supabase-manager",
+  "module": "src/index.ts",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "A Typescript client for Supabase Management API generated from the [OpenAPI Spec](https://api.supabase.com/api/v1-json). See the [Supabase Management API documentation](https://supabase.com/docs/reference/api/introduction) for more information.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "postinstall": "bun run ./script/generate.ts && bun run tsc"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "openapi-typescript-codegen": "^0.27.0"
+  }
+}
