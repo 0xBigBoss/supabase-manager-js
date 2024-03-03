@@ -9,4 +9,13 @@ bun install
 bun run postinstall
 ```
 
+## Release a new version
+
+```bash
+bunx changeset
+bunx version
+bunx publish
+# commit the results
+```
+
 This project was created using `bun init` in bun v1.0.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
