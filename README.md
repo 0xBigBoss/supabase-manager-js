@@ -11,7 +11,7 @@ bun add @0xbigboss/supabase-manager
 Example usage below. Be sure to set `TOKEN` and `BASE` on your **`SupabaseManager`** instance.
 
 ```ts
-import { SupabaseManager } from "@0xbigboss/supabase-manager-js";
+import { SupabaseManager } from "@0xbigboss/supabase-manager";
 
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN;
 
