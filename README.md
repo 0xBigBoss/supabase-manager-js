@@ -9,6 +9,30 @@ bun install
 bun run postinstall
 ```
 
+## Usage
+
+Example usage below. Be sure to set `TOKEN` and `BASE` on your **`SupabaseManager`** instance.
+
+```ts
+import { SupabaseManager } from "@0xbigboss/supabase-manager-js";
+
+const TOKEN = process.env.SUPABASE_ACCESS_TOKEN;
+
+if (!TOKEN) {
+  throw new Error("SUPABASE_ACCESS_TOKEN is not defined");
+}
+
+const supabase = new SupabaseManager({
+  TOKEN,
+  BASE: "https://api.supabase.com/",
+});
+
+
+const projects = await supabase.projects.getProjects();
+
+console.log(projects);
+```
+
 ## Release a new version
 
 ```bash
