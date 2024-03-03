@@ -2,14 +2,11 @@
 
 A Javascript/Typescript client for Supabase Management API generated from the [OpenAPI Spec](https://api.supabase.com/api/v1-json). See the [Supabase Management API documentation](https://supabase.com/docs/reference/api/introduction) for more information.
 
-To install dependencies and re-generate the source files:
+## Usage
 
 ```bash
-bun install
-bun run postinstall
+bun add @0xbigboss/supabase-manager
 ```
-
-## Usage
 
 Example usage below. Be sure to set `TOKEN` and `BASE` on your **`SupabaseManager`** instance.
 
@@ -31,6 +28,15 @@ const supabase = new SupabaseManager({
 const projects = await supabase.projects.getProjects();
 
 console.log(projects);
+```
+
+## Contributing
+
+To install dependencies and re-generate the source files:
+
+```bash
+bun install
+bun run postinstall
 ```
 
 ## Release a new version
