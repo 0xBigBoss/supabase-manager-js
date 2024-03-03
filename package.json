@@ -6,6 +6,9 @@
   "description": "A Typescript client for Supabase Management API generated from the [OpenAPI Spec](https://api.supabase.com/api/v1-json). See the [Supabase Management API documentation](https://supabase.com/docs/reference/api/introduction) for more information.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "license": "GPL-3.0-only",
+  "author": "Big Boss <bigboss@metalrodeo.xyz>",
+  "repository": "https://github.com/0xBigBoss/supabase-manager-js.git",
   "scripts": {
     "postinstall": "bun run ./script/generate.ts && bun run tsc"
   },
